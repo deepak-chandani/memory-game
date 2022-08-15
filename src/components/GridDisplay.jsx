@@ -19,7 +19,7 @@ const Grid = styled.div.attrs((props) => ({
   grid-gap: 4px;
   background-color: #8eb7d7;
   border: 2px solid #8eb7d7;
-  transition: all 0.25s; ;
+  transition: all 0.25s;
 `;
 
 
@@ -42,7 +42,7 @@ function GridDisplay({windowWidth}){
         } else {
           removeMatchedCards(dispatch)
         }
-      }, 775);
+      }, 600);
     }
 
   }, [openedCards, dispatch])

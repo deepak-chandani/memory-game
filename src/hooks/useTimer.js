@@ -114,10 +114,6 @@ function stop(dispatch){
 };
 
 function reset(dispatch){
-  // stop(dispatch);
+  stop(dispatch);
   dispatch({ type: ActionTypes.RESET });
-};
-
-function setTime(dispatch, t){
-  dispatch({ type: ActionTypes.SET_TIME, payload: t });
 };
