@@ -13,8 +13,8 @@
   - The user shouldn't be able to turn over any more cards until the 3 second timer completes and the two revealed cards are either removed (if they matched), or hidden again (if they didn't)
   - Once all cards are removed from the board, the game is over and the 'Play again' button should be shown
   - Clicking **'Play again'** should generate a new, random set of cards on the grid
-## Analysis
-- It contains my thoughts on following areas:
+## Analysis 🔎 🧠
+thoughts on following areas 👇:
   - What data structure to use for storing `Grid` & `Card` data
   - What pieces of data should be kept in state
   - Different components & How to structure different components
