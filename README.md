@@ -17,8 +17,8 @@
 thoughts on following areas 👇:
   - What data structure to use for storing `Grid` & `Card` data
   - What pieces of data should be kept in state
-  - Different components & How to structure different components
-  - Provider pattern using `Context API` & `useReducer` (`GameProvider`)
+  - Different components & How to structure/compose those components
+  - Provider pattern using `Context API` & `useReducer` (`GameProvider` to manage global state of Game)
   - custom hooks: `useGame()`, `useCards()` etc
   - Different possible user actions & dispatchers corresponding to those actions
     - eg: `startGame()`, `openCard(card)`, `closeCards([cards])`
@@ -53,7 +53,7 @@ type Card {
     -  `matchFound` then `setTimeout(() => dispatch(removeMatchedCards(c1,c2)), 1000)`
 
 ## Component structure
-- `Game` Component
+- `GameProvider` Component
   - will have following state
 ```ts
  type GameState {
