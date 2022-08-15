@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Game from './pages/Game';
+import Home from './pages/Home';
+import { useGame } from './context/hooks';
+import { GameStatus } from './context/gameReducer';
+import Results from './pages/Results';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [{status}] = useGame()
+
+  if(status === GameStatus.RUNNING) {
+    return <Game />
+  } else if (status === GameStatus.COMPLETED) {
+    return <Results />
+  } else {
+    return <Home/>
+  }
 }
 
 export default App;
