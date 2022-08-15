@@ -3,9 +3,10 @@
 - Basically its explanation of my thought process while reaching to the solution.
 - **NOTE:** this was written before coding the solution so there will be little differences in actual implementation
 - Demo link: <a href="https://slimy-creator.surge.sh">Memory Game (using hooks & Context API) demo</a>
-## Requirements
+## Problem Description & Requirements
   - Cards should be laid out on a 6x6 grid (can be configured using `config` object `{rows: 6, cols: 6}`), all face down initially (i.e. numbers not showing)
   - There should be a total of 36 cards with the numbers 1-18 (two of each), placed randomly on the grid
+  - <img src="./public/memory-game-1.png" width="450" />
   - Clicking a card should 'reveal' it - showing the hidden number of the card
   - Clicking a second card should reveal that card
   - If the second card has the same number as the first card, both cards should be removed from the board after 1 seconds
